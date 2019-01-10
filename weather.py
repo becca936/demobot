@@ -2,7 +2,7 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-
+app.run()
 @app.route('/weather')
 def weather():
 
@@ -13,4 +13,3 @@ def weather():
         return "It's so hot!"
     else:
         return f"the temperature is {temp}"
-app.run()
