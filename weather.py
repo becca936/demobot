@@ -1,8 +1,6 @@
-from flask import Flask, request
+from flask import  request
+from demobot import app
 
-app = Flask(__name__)
-
-app.run()
 @app.route('/weather')
 def weather():
 

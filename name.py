@@ -1,6 +1,5 @@
 from flask import Flask, request
-
-app = Flask(__name__)
+from demobot import app
 
 @app.route('/greet', methods=['GET', 'POST'])
 def greet_person():
@@ -9,4 +8,3 @@ def greet_person():
 
     return f'hi {name}!'
 
-app.run()
