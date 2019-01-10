@@ -1,7 +1,6 @@
 from flask import Flask, request
 
 app = Flask(__name__)
-#talk 
 @app.route('/greet', methods=['GET', 'POST'])
 def greet_person():
 
